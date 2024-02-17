@@ -1,0 +1,40 @@
+{
+    "schemaVersion": 1,
+    "id": "automessage",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "${license}",
+    "icon": "assets/modid/${mod_id}.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+          "net.jason13.automessage.FabricExampleMod"
+        ],
+        "client": [
+            "net.jason13.automessage.FabricExampleModClient"
+        ]
+    },
+    "mixins": [
+        "${mod_id}.mixins.json",
+        "${mod_id}.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": "${fabric_loader_range}",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}",
+        "java": ">=17",
+        "monolib": ">=0"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
+  
